@@ -160,6 +160,7 @@
   <ItemGroup>
     <ClInclude Include="DrawFunctions.h" />
     <ClInclude Include="FaceExample.h" />
+    <ClInclude Include="FaceExample1_Bear.h" />
     <ClInclude Include="Game2D.h" />
     <ClInclude Include="PrimitivesGallery.h" />
     <ClInclude Include="RGB.h" />
