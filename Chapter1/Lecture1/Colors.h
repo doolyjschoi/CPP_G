@@ -6,7 +6,7 @@ namespace jm
 {
 	namespace Colors
 	{
-		// RGB color table http://www.rapidtables.com/web/color/RGB_Color.htm
+		// RGB color table http://www.rapidtables.com/web/color/RGB_Color.html
 		//const RGB red(255, 0, 0);
 		//const RGB green(0, 255, 0);
 		//const RGB blue(0, 0, 255);

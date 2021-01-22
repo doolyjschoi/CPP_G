@@ -71,5 +71,8 @@
     <ClInclude Include="FaceExample1_Bear.h">
       <Filter>Examples</Filter>
     </ClInclude>
+    <ClInclude Include="FaceExample2_Bear2.h">
+      <Filter>Examples</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
