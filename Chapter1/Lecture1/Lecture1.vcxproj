@@ -162,6 +162,7 @@
     <ClInclude Include="FaceExample.h" />
     <ClInclude Include="FaceExample1_Bear.h" />
     <ClInclude Include="FaceExample2_Bear2.h" />
+    <ClInclude Include="FaceExample3_JJangGu.h" />
     <ClInclude Include="Game2D.h" />
     <ClInclude Include="PrimitivesGallery.h" />
     <ClInclude Include="RGB.h" />

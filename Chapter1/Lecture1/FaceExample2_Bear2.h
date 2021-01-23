@@ -9,7 +9,7 @@ namespace jm
 	public:
 		void update() override
 		{
-			setLineWidth(15.0f);
+			setLineWidth(15);
 
 			//left ear
 			beginTransformation();

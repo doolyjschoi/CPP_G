@@ -4,37 +4,24 @@
 
 namespace jm
 {
-	class FaceExample1Bear : public Game2D
+	class JJangGu : public Game2D
 	{
 	public:
 		void update() override
 		{
 			setLineWidth(15);
 
-			//left ear
-			beginTransformation();
-			{
-				translate(-0.4f, 0.7f);
-				drawFilledCircle(Colors::peru, 0.15f);
-				drawWiredCircle(Colors::black, 0.15f);
-			}
-			endTransformation();
-
-			//right ear
-			beginTransformation();
-			{
-				translate(0.4f, 0.7f);
-				drawFilledCircle(Colors::peru, 0.15f);
-				drawWiredCircle(Colors::black, 0.15f);
-			}
-			endTransformation();
-
-
 			// Big yellow face
 			beginTransformation();
 			{
-				drawFilledCircle(Colors::peru, 0.8f); // draw background object first
-				drawWiredCircle(Colors::black, 0.8f);
+				drawFilledCircle(Colors::navajowhite, 0.8f); // draw background object first
+			}
+			endTransformation();
+
+			// red cap
+			beginTransformation();
+			{
+				drawFilledBox(Colors::red, )
 			}
 			endTransformation();
 
