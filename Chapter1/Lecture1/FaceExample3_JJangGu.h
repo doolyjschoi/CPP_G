@@ -9,7 +9,7 @@ namespace jm
 	public:
 		void update() override
 		{
-			setLineWidth(15);
+			setLineWidth(2);
 
 			// Big yellow face
 			beginTransformation();
@@ -21,64 +21,76 @@ namespace jm
 			// red cap
 			beginTransformation();
 			{
-				drawFilledBox(Colors::red, )
+				translate(0.0f, 0.88f);
+				drawFilledBox(Colors::red, 1.0f, 0.5f);
+			}
+			endTransformation();
+
+			beginTransformation();
+			{
+				translate(0.5f, 0.68f);
+				drawFilledBox(Colors::red, 1.0f, 0.1f);
 			}
 			endTransformation();
 
 			// left eye
 			beginTransformation();
 			{
-				translate(-0.37f, 0.25f);
-				drawFilledBox(Colors::black, 0.3f, 0.05f);
-				translate(0.05f, -0.1f);
-				drawFilledCircle(Colors::black, 0.035f);
+				translate(-0.3f, 0.5f);
+				drawFilledBox(Colors::black, 0.4f, 0.1f);
+				translate(0.03f, -0.2f);
+				scale(1.0f, 0.5f);
+				drawFilledCircle(Colors::black, 0.1f);
+				drawFilledCircle(Colors::white, 0.03f);
 			}
 			endTransformation();
 
 			// right eye
 			beginTransformation();
 			{
-				translate(0.37f, 0.25f);
-				drawFilledBox(Colors::black, 0.3f, 0.05f);
-				translate(-0.05f, -0.1f);
-				drawFilledCircle(Colors::black, 0.035f);
-			}
-			endTransformation();
-
-			// mouth1 - left circlr
-			beginTransformation();
-			{
-				translate(-0.065f, -0.28f);
-				drawFilledCircle(Colors::white, 0.07f);
-				drawWiredCircle(Colors::black, 0.07f);
-			}
-			endTransformation();
-			// mouth2 - right circlr
-			beginTransformation();
-			{
-				translate(0.065f, -0.28f);
-				drawFilledCircle(Colors::white, 0.07f);
-				drawWiredCircle(Colors::black, 0.07f);
-			}
-			endTransformation();
-
-			// mouth3 - white box & black line
-			beginTransformation();
-			{
-				translate(0.0f, -0.263f);
-				drawFilledBox(Colors::white, 0.15f, 0.078f);
-				drawLine(Colors::black, vec2(0.06f, 0.055f), Colors::black, vec2(-0.06f, 0.055f));
+				translate(0.3f, 0.5f);
+				drawFilledBox(Colors::black, 0.4f, 0.1f);
+				translate(-0.03f, -0.2f);
+				scale(1.0f, 0.5f);
+				drawFilledCircle(Colors::black, 0.1f);
+				drawFilledCircle(Colors::white, 0.03f);
 			}
 			endTransformation();
 
 			// nose
 			beginTransformation();
 			{
-				translate(0.0f, -0.2f);
-				drawFilledCircle(Colors::black, 0.035f);
+				translate(0.0f, -0.1f);
+				drawLine(Colors::black, vec2(-0.05f, 0.0f), Colors::black, vec2(0.05f, 0.0f));
+				drawLine(Colors::black, vec2(-0.05f, 0.0f), Colors::black, vec2(0.0f, 0.2f));
 			}
 			endTransformation();
 
+			// mouth circlr
+			beginTransformation();
+			{
+				translate(0.0f, -0.6f);
+				drawFilledCircle(Colors::red, 0.1f);
+			}
+			endTransformation();
+
+			// left cheap
+			beginTransformation();
+			{
+				translate(-0.5f, -0.2f);
+				scale(1.0f, 0.5f);
+				drawFilledCircle(Colors::yellow, 0.1f);
+			}
+			endTransformation();
+
+			// right cheap
+			beginTransformation();
+			{
+				translate(0.5f, -0.2f);
+				scale(1.0f, 0.5f);
+				drawFilledCircle(Colors::yellow, 0.1f);
+			}
+			endTransformation();
 		}
 	};
 }
